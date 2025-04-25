@@ -17,20 +17,20 @@ public class UserServiceTests {
     @Autowired
     private UserRepository userRepository;
 
-//    @Disabled // - to skip any test
+    @Disabled // - to skip any test
     @Test
-    @Disabled
     public void testFindByUsername(){
         assertNotNull(userRepository.findByUsername("ram"));
     }
 
+
+    @Disabled
     @ParameterizedTest
     @CsvSource({
             "ram",
             "shyam",
             "peter"
     })
-    @Disabled
     public void testFindByUsername(String username){
         assertNotNull(userRepository.findByUsername(username));
     }
