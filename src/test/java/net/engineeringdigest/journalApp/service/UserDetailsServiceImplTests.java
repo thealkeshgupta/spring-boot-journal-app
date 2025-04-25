@@ -16,23 +16,23 @@ import static  org.mockito.Mockito.*;
 
 public class UserDetailsServiceImplTests {
 
-    @InjectMocks
-    private UserDetailsServiceImpl userDetailsService;
-
-    @Mock
-    private UserRepository userRepository;
-
-    @BeforeEach
-    @Disabled
-    void setUp(){
-        MockitoAnnotations.initMocks(this);
-    }
-
-    @Disabled
-    @Test
-    void loadUserByUsernameTest(){
-        when(userRepository.findByUsername(ArgumentMatchers.anyString())).thenReturn(User.builder().username("ram").password("inrinrick").roles(new ArrayList<>()).build());
-        UserDetails user = userDetailsService.loadUserByUsername("ram");
-        Assertions.assertNotNull(user);
-    }
+//    @InjectMocks
+//    private UserDetailsServiceImpl userDetailsService;
+//
+//    @Mock
+//    private UserRepository userRepository;
+//
+//    @BeforeEach
+//    @Disabled
+//    void setUp(){
+//        MockitoAnnotations.initMocks(this);
+//    }
+//
+//    @Disabled
+//    @Test
+//    void loadUserByUsernameTest(){
+//        when(userRepository.findByUsername(ArgumentMatchers.anyString())).thenReturn(User.builder().username("ram").password("inrinrick").roles(new ArrayList<>()).build());
+//        UserDetails user = userDetailsService.loadUserByUsername("ram");
+//        Assertions.assertNotNull(user);
+//    }
 }

@@ -14,24 +14,24 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 public class UserServiceTests {
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @Disabled // - to skip any test
-    @Test
-    public void testFindByUsername(){
-        assertNotNull(userRepository.findByUsername("ram"));
-    }
-
-
-    @Disabled
-    @ParameterizedTest
-    @CsvSource({
-            "ram",
-            "shyam",
-            "peter"
-    })
-    public void testFindByUsername(String username){
-        assertNotNull(userRepository.findByUsername(username));
-    }
+//    @Autowired
+//    private UserRepository userRepository;
+//
+//    @Disabled // - to skip any test
+//    @Test
+//    public void testFindByUsername(){
+//        assertNotNull(userRepository.findByUsername("ram"));
+//    }
+//
+//
+//    @Disabled
+//    @ParameterizedTest
+//    @CsvSource({
+//            "ram",
+//            "shyam",
+//            "peter"
+//    })
+//    public void testFindByUsername(String username){
+//        assertNotNull(userRepository.findByUsername(username));
+//    }
 }
