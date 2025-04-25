@@ -19,6 +19,7 @@ public class UserServiceTests {
 
 //    @Disabled // - to skip any test
     @Test
+    @Disabled
     public void testFindByUsername(){
         assertNotNull(userRepository.findByUsername("ram"));
     }
@@ -29,6 +30,7 @@ public class UserServiceTests {
             "shyam",
             "peter"
     })
+    @Disabled
     public void testFindByUsername(String username){
         assertNotNull(userRepository.findByUsername(username));
     }

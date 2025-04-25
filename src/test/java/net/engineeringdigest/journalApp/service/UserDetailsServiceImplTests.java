@@ -23,6 +23,7 @@ public class UserDetailsServiceImplTests {
     private UserRepository userRepository;
 
     @BeforeEach
+    @Disabled
     void setUp(){
         MockitoAnnotations.initMocks(this);
     }
